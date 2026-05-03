@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 public class SimpleHttpCaller {
 
     private static final String HOST = "google.com";
-    private static final int HTTP_PORT = 80;
+    private static final int HTTP_PORT = 80; // 443 = default for https; 80 = default for http
     private static final String HTTP_REQUEST = "GET / HTTP/1.1" + System.lineSeparator();
 
     static void main() {
