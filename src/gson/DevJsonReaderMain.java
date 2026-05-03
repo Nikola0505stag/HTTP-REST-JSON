@@ -1,7 +1,6 @@
 package gson;
 
 import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
@@ -9,8 +8,8 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class DevJsonReaderMain {
-    static void main() throws IOException {
 
+    static void main() throws IOException {
         Gson gson = new Gson();
 
         try (Reader reader = Files.newBufferedReader(
@@ -18,6 +17,5 @@ public class DevJsonReaderMain {
             List<Developer> devs = gson.fromJson(reader, List.class);
             IO.println(devs);
         }
-
     }
 }
